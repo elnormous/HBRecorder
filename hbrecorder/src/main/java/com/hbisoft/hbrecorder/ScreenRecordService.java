@@ -310,38 +310,40 @@ public class ScreenRecordService extends Service {
     private void setAudioSourceAsInt(String audioSource) {
         switch (audioSource) {
             case "DEFAULT":
-                audioSourceAsInt = 0;
+                audioSourceAsInt = MediaRecorder.AudioSource.DEFAULT;
                 break;
             case "MIC":
-                audioSourceAsInt = 1;
+                audioSourceAsInt = MediaRecorder.AudioSource.MIC;
                 break;
             case "VOICE_UPLINK":
-                audioSourceAsInt = 2;
+                audioSourceAsInt = MediaRecorder.AudioSource.VOICE_UPLINK;
                 break;
             case "VOICE_DOWNLINK":
-                audioSourceAsInt = 3;
+                audioSourceAsInt = MediaRecorder.AudioSource.VOICE_DOWNLINK;
                 break;
             case "VOICE_CALL":
-                audioSourceAsInt = 4;
+                audioSourceAsInt = MediaRecorder.AudioSource.VOICE_CALL;
                 break;
-            case "CAMCODER":
-                audioSourceAsInt = 5;
+            case "CAMCORDER":
+                audioSourceAsInt = MediaRecorder.AudioSource.CAMCORDER;
                 break;
             case "VOICE_RECOGNITION":
-                audioSourceAsInt = 6;
+                audioSourceAsInt = MediaRecorder.AudioSource.VOICE_RECOGNITION;
                 break;
             case "VOICE_COMMUNICATION":
-                audioSourceAsInt = 7;
+                audioSourceAsInt = MediaRecorder.AudioSource.VOICE_COMMUNICATION;
                 break;
             case "REMOTE_SUBMIX":
-                audioSourceAsInt = 8;
+                audioSourceAsInt = MediaRecorder.AudioSource.REMOTE_SUBMIX;
                 break;
             case "UNPROCESSED":
-                audioSourceAsInt = 9;
+                audioSourceAsInt = MediaRecorder.AudioSource.UNPROCESSED;
                 break;
             case "VOICE_PERFORMANCE":
-                audioSourceAsInt = 10;
+                audioSourceAsInt = MediaRecorder.AudioSource.VOICE_PERFORMANCE;
                 break;
+            default:
+                audioSourceAsInt = MediaRecorder.AudioSource.DEFAULT;
         }
     }
 

@@ -47,7 +47,7 @@
 
     <string-array name="pref_audio_source">
         <item>DEFAULT</item>
-        <item>CAMCODER</item>
+        <item>CAMCORDER</item>
         <item>MIC</item>
     </string-array>
 
